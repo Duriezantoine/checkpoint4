@@ -1,0 +1,70 @@
+body {
+    background-image: url("https://cdn.shopify.com/s/files/1/0275/9779/9466/products/PAPIER_PEINT_MURALCONCEPT_CARTE_MONDE_CHIC.jpg?v=1600497428");
+    margin: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#f7f0f0 .navbar {
+    height: 7rem;
+    width: 97%;
+}
+
+.form-control {
+    width: 75%;
+    text-align: center;
+}
+
+.email {
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar-nav {
+    flex: float-right;
+}
+
+.navbar-brand {
+    margin-right: 20rem;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(75, 68, 68);
+    text-align: center;
+}
+
+.footer-text {
+    color: rgb(39, 38, 39);
+    margin: 2rem;
+    margin-bottom: 15rem;
+}
+
+.nav-link {
+    color: #494d53;
+}
+
+.password-field {
+    border-radius: 1rem;
+    height: 2.5rem;
+    margin: 15px;
+}
+
+#registration_form_plainPassword_second {
+    background-color: #f7f0f0
+}
+
+.required {
+    margin: 5px;
+}
+
+.register {
+    margin-bottom: 15px;
+}
+
+.registration_form_email {
+    margin-left: 15px;
+}
