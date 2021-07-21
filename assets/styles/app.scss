@@ -1,6 +1,6 @@
 body {
     background-image: url("https://cdn.shopify.com/s/files/1/0275/9779/9466/products/PAPIER_PEINT_MURALCONCEPT_CARTE_MONDE_CHIC.jpg?v=1600497428");
-    margin: 15%;
+    margin: 5%;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -67,4 +67,8 @@ body {
 
 .registration_form_email {
     margin-left: 15px;
+}
+
+.card-body {
+    opacity: 0.4;
 }

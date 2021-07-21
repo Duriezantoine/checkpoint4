@@ -25,7 +25,7 @@ class Pays
     private $Title;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=1500)
      */
     private $Image;
 
@@ -34,11 +34,7 @@ class Pays
      */
     private $Description;
 
-    /**
-     * @ORM\Column(type="datetime_immutable")
-     */
-    private $Created_at;
-
+   
     /**
      * @ORM\ManyToMany(targetEntity=Avis::class, mappedBy="Pays")
      */
@@ -90,17 +86,6 @@ class Pays
         return $this;
     }
 
-    public function getCreatedAt(): ?\DateTimeImmutable
-    {
-        return $this->Created_at;
-    }
-
-    public function setCreatedAt(\DateTimeImmutable $Created_at): self
-    {
-        $this->Created_at = $Created_at;
-
-        return $this;
-    }
 
     /**
      * @return Collection|Avis[]
