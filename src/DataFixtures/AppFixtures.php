@@ -15,7 +15,7 @@ class AppFixtures extends Fixture
 
         $pays->setTitle('Allemagne');
 
-        $pays->setImage('https://www.google.com/imgres?imgurl=https%3A%2F%2Fm-st.azureedge.net%2Fimages%2Ftemp-static%2Fnemetorszag-berlin.jpg&imgrefurl=https%3A%2F%2Fmortons.hu%2Futazas%2Fnemetorszag%2Fberlin&tbnid=JWE8GngwEB5wVM&vet=12ahUKEwiNw5np8fTxAhXZgaQKHfSoC44QMygFegUIARDUAQ..i&docid=DeWpk5Y5omKRLM&w=600&h=400&q=berlin&client=ubuntu&ved=2ahUKEwiNw5np8fTxAhXZgaQKHfSoC44QMygFegUIARDUAQ');
+        $pays->setImage('https://images.assetsdelivery.com/compings_v2/bloodua/bloodua1510/bloodua151000627.jpg');
 
         $pays->setDescription('Allemagne est un pays à la charnière de Europe occidentale et de Europe centrale situé entre le Benelux et la France à louest, la mer du Nord, le Danemark et la mer Baltique au nord, la Pologne et la République tchèque à lest et la Suisse et lAutriche au sud.');
 
@@ -37,7 +37,7 @@ class AppFixtures extends Fixture
 
         $pays->setTitle('Portugal');
 
-        $pays->setImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGFb9AzwywCAvKRAV9QYtl4rkNUHh5HuVfTw&usqp=CAU");
+        $pays->setImage("https://images.assetsdelivery.com/compings_v2/rudi1976/rudi19761505/rudi1976150500022.jpg");
 
         $pays->setDescription("Porto est une ville côtière située au nord-ouest du Portugal. Elle est réputée pour ses ponts imposants et sa production de porto. Dans le quartier médiéval de la Ribeira ");
 
@@ -56,6 +56,9 @@ class AppFixtures extends Fixture
         $manager->persist($pays);
 
 
+        $pays = new Pays();
+
+
         $pays->setTitle('Hongrie');
 
         $pays->setImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxIu4bD7rhmSKIf6_L6VzZ4p1q6q0quonkMA&usqp=CAU");
@@ -65,6 +68,7 @@ class AppFixtures extends Fixture
 
         $manager->persist($pays);
 
+        $pays = new Pays();
 
 
         $pays->setTitle('Brésil');

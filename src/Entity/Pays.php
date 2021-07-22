@@ -24,17 +24,14 @@ class Pays
      */
     private $Title;
 
-    /**
-     * @ORM\Column(type="string", length=1500)
-     */
-    private $Image;
+  
 
     /**
      * @ORM\Column(type="text")
      */
     private $Description;
 
-   
+
     /**
      * @ORM\ManyToMany(targetEntity=Avis::class, mappedBy="Pays")
      */

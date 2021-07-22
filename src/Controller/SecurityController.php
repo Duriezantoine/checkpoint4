@@ -7,6 +7,13 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
+use App\Entity\Pays;
+use App\Entity\About;
+use App\Entity\Footer;
+use App\Entity\UploadCarrousel;
+use App\Repository\PaysRepository;
+
+
 class SecurityController extends AbstractController
 {
     
@@ -37,8 +44,12 @@ class SecurityController extends AbstractController
     /**
      * @Route("/home", name="home")
      */
-    public function home(): Response
+    public function home(PaysRepository $paysRepository): Response
     {
-        return $this->render("security/home.html.twig");
+        return $this->render("security/home.html.twig",  [
+            'pays' => $paysRepository->findAll()
+
+
+        ]);
     }
 }
