@@ -10,7 +10,8 @@
 		</h1>
 	</center>
 	<div class="row">
-		<div class="col-3 m-4">
+		<div class="col-3 m-1">
+
 			<div class="card m-5" style="width: 18rem;">
 				<img class="card-img-top" src="https://images.assetsdelivery.com/compings_v2/jakobradlgruber/jakobradlgruber1603/jakobradlgruber160300041.jpg" alt="Card image cap">
 				<div class="card-body">
@@ -23,6 +24,9 @@
 				<div class="card-body">
 					<h5 class="card-title">{{pays[1].title}}</h5>
 					<a href="#" class="btn btn-primary">{{pays[1].description}}</a>
+
+					<h6 class="card-title">{{avis[0].commentaire}}</h5>
+
 				</div>
 			</div>
 			<div class="card m-5" style="width: 18rem;">
@@ -40,14 +44,22 @@
 				</div>
 			</div>
 		</div>
+		<div class="col-8 m-5">
+			<div class="carte_allemagne m-1">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1IEl21CsR_QTW95RosPOkoo1e83iNiAIR" width="640" height="495.55"></iframe>
+			</div>
 
-
-		<p>CE site permet de déterminer la vision des pays les uns avec les autres
-		</p>
-		<div class="col-6 m-4">
-			<iframe src="https://www.google.com/maps/d/embed?mid=1CzemMB0WHillRaDeYW1FawV52yQ" width="640" height="480"></iframe>
+			<div class="carte_Espagne mt-5">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1CzemMB0WHillRaDeYW1FawV52yQ" width="640" height="575"></iframe>
+			</div>
+			<div class="carte_Espagne mt-5">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1CzemMB0WHillRaDeYW1FawV52yQ" width="640" height="408.55"></iframe>
+			</div>
+			<div class="carte_Espagne mt-5">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1CzemMB0WHillRaDeYW1FawV52yQ" width="640" height="442.3"></iframe>
+			</div>
+			<div class="col-3 m-4"></div>
 		</div>
-		<div class="col-3 m-4"></div>
-
-
-	{% endblock %}
+		<div class="col"></div>
+	</div>
+{% endblock %}
